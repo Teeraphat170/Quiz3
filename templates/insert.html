@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Add</title>
+</head>
+
+<body>
+    <h1>Add book</h1>
+
+    {%for message in get_flashed_messages() %}
+    {{ message }}
+    {%endfor %}
+
+    <form action='/insert' method="POST">
+            <label>Title :</label><input  type="text" class="form-control" name="title" /></br>
+            <label>Author :</label><input  type="text" class="form-control" name="author" /></br>
+            <label>Genre :</label><input type="text" class="form-control" name="genre" /></br>
+            <label>Height :</label><input  type="integer" class="form-control" name="height" /></br>
+            <label>Publisher :</label><input  type="text" class="form-control" name="publisher" /></br>
+            <input type="submit" class="btn btn-success mr-2" value="เพิ่มข้อมูล"/></br>
+      </form>
+</body>
+</html>
+
