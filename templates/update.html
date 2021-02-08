@@ -10,17 +10,17 @@
     <form action='' method="POST">
         <h4 class= text-center>แก้ไขข้อมูล</h4>
             <div class="form-group">
-                <h4>Title:</h4>
+                <h4>Title : </h4>
                 <input type="text" placeholder="Title"  name="title" value="{{ book.title }}" /></br>
-                <h4>Author:</h4>
+                <h4>Author : </h4>
                 <input type="text" placeholder="Author"  name="author"value="{{ book.author }}" /></br>
-                <h4>Genre:</h4>
+                <h4>Genre : </h4>
                 <input type="text" placeholder="Genre"   name="genre" value="{{ book.genre }}" /></br>
-                <h4>Height:</h4>
+                <h4>Height :</h4>
                 <input type="integer" placeholder="Height"  name="height"value="{{ book.height }}" /></br>
-                <h4>Publisher:</h4>
+                <h4>Publisher :</h4>
                 <input type="text" placeholder = "Publisher"  name="publisher"value="{{ book.publisher }}" />
-        </div>
+        </div></br>
                 <input type="submit" class="btn btn-success mr-2" value="อัพเดต" />
                 <a href="/" class="btn btn-primary">ย้อนกลับ  <i class="fas fa-arrow-circle-left"></i></a>           
 </body>

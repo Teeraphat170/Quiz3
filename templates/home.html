@@ -22,9 +22,10 @@
         tr:nth-child(even) {
             background-color: #dddddd;
         }
+        
        </style>
     <h1>Book</h1>
-    <p>book (<a href="{{ url_for('insert') }}">Add</a>)</p>
+    <p>Book (<a href="{{ url_for('insert') }}" style="text-decoration: none;">Add Here</a>)</p>
 
     <table>
         <thead>
@@ -46,8 +47,8 @@
                   <td>{{i.genre}}</td>
                   <td>{{i.height}}</td>
                   <td>{{i.publisher}}</td>
-                  <td><a href="/update/{{ i.title }}" class="btn btn-success"><i class='fas fa-edit'></i>update</a></td>
-                  <td><a href="/delete/{{ i.title }}" class="btn btn-success"><i class='fas fa-edit'></i>delete</a></td>
+                  <td><a href="/update/{{ i.title }}" class="btn btn-success" style="text-decoration: none;"><i class='fas fa-edit'></i>update</a></td>
+                  <td><a href="/delete/{{ i.title }}" class="btn btn-success" style="text-decoration: none;"><i class='fas fa-edit'></i>delete</a></td>
                 </tr>
                 {% endfor %}
         </tbody>
